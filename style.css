@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(152, 152, 241);
+    /* padding: 15px; */
+}
+.card-header{
+    display: flex;
+}
+.card-header h3,p{
+    padding: 0;
+    margin: 5px;
+
+}
+.card img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin: 10px;
+    padding: 10px;
+
+}
+.card-bg-purple{
+    background-color: blueviolet;
+    display: grid;
+    grid-column: 1/3;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+.card-bg-gray-blue{
+    background-color: grey;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+.card2{
+    border-radius: 10px;
+    display: grid;
+    grid-column: 2/1;
+    background-color: white;
+    padding: 20px;
+
+
+}
+.card-bg-black-blue{
+    background-color: rgb(27, 25, 53);
+    color: white;
+    display: grid;
+    grid-column: 2/4;
+    border-radius: 20px;
+    padding: 20px;
+}
+.card3{
+    border-radius: 10px;
+    display: grid;
+    grid-column: 4/4;
+    grid-row: 1/3;
+    background-color: white;
+    padding: 20px;
+
+}
+.card-lead{
+    font-size: 20px;
+}
+@media(max-width:425px){
+    .testimonials{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        grid-column: 1;
+    }
+    .card3{
+        grid-row:5;
+    }
+
+}
